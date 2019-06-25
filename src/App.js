@@ -1,4 +1,10 @@
 import React from 'react';
+
+import Grid from 'react-bootstrap';
+import Row from 'react-bootstrap';
+import Col from 'react-bootstrap';
+import Styled from 'styled-components';
+
 import logo from './logo.svg';
 import './App.css';
 

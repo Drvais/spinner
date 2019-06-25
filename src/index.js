@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function Hello(props){
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+    let text = 'world';
+    return(
+        <div>
+            <h1>Hello {text}</h1>
+            <p>My name is {props.name}</p>
+        </div>
+    )
+};
+
+ReactDOM.render(<Hello name="ilan" />, document.getElementById('root'));
 serviceWorker.unregister();
