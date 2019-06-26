@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import {Row,Col} from 'react-bootstrap';
 import Styled from 'styled-components';
+import Slider from './slider';
 
 
 const Repair = Styled.div`
@@ -57,7 +58,7 @@ class Main extends Component{
                     </CallBtn>
                 </Col>
                 <Col lg={6} lgOffset={1}>
-                
+                    <Slider/>
                 </Col>
             </Row>
         )
